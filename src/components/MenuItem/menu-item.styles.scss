@@ -1,0 +1,15 @@
+.menu-item {
+  border: 3px solid blue;
+  width: 100vw;
+  display: flex;
+  .content {
+    border: 5px solid yellow;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .picture {
+      width: 70%;
+    }
+  }
+}

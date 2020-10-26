@@ -1,5 +1,5 @@
 import './App.scss';
-import HomePage from './homepage.component.jsx';
+import HomePage from './components/HomePage/homepage.component.jsx';
 import { Route, Switch } from 'react-router-dom';
 
 const HatsPage = (props) => {
