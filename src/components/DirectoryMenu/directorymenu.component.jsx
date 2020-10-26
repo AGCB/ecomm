@@ -1,6 +1,8 @@
 import React from 'react';
 import MenuItem from '../MenuItem/menuitem.component.jsx';
 import pages from '../../config/pages.js';
+import './directorymenu.styles.scss';
+
 console.log('!! we have pages', pages);
 const DirectoryMenu = () => {
 

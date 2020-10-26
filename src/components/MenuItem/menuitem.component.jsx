@@ -1,10 +1,10 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import './menu-item.styles.scss';
 
 const MenuItem = ({pageProps, history}) => {
   const {
-    linkUrl,
+    componentName,
     imageUrl,
     id,
     header,
@@ -15,9 +15,15 @@ const MenuItem = ({pageProps, history}) => {
       <div className="content">
         <h1 className="title">{header}</h1>
         <img className="picture" src={imageUrl}></img>
-        <button
-          className="subtitle"
-          onClick={() => history.push(`/${linkUrl.toLowerCase()}`)}>{subtitle}</button>
+        <Link to={componentName}>using rrd's link</Link>
+        {/*
+          if we need more fine grained, we could always skip the Link
+          and use a button with history.push()
+          <button onClick={() => {
+              history.push(componentName)
+            }}>using history.push</button>
+        */}
+
       </div>
     </div>
   )
