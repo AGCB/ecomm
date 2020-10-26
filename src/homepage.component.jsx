@@ -1,43 +1,16 @@
 import React from 'react';
+import MenuItem from './menuitem.component.jsx';
 import './homepage.styles.scss';
 import { Link } from 'react-router-dom';
 
 const HomePage = (props) => (
   <div className="homepage">
     <div className="directory-menu">
-      <div className="menu-item">
-        <div className="content">
-          <h1 className="title">HATS</h1>
-          <span ></span>
-          <button
-            className="subtitle"
-            onClick={() => props.history.push('/hats')}>click here for hats page</button>
-        </div>
-      </div>
-      <div className="menu-item">
-        <div className="content">
-          <h1 className="title">Jackets</h1>
-          <span className="subtitle">SHOP NOW</span>
-        </div>
-      </div>
-      <div className="menu-item">
-        <div className="content">
-          <h1 className="title">Womens</h1>
-          <span className="subtitle">SHOP NOW</span>
-        </div>
-      </div>
-      <div className="menu-item">
-        <div className="content">
-          <h1 className="title">Sneakers</h1>
-          <span className="subtitle">SHOP NOW</span>
-        </div>
-      </div>
-      <div className="menu-item">
-        <div className="content">
-          <h1 className="title">Pants</h1>
-          <span className="subtitle">SHOP NOW</span>
-        </div>
-      </div>
+      <MenuItem title="HATS" subtitle="shop for hatz" history={props.history}/>
+      <MenuItem title="Jackets" subtitle="shop for js" history={props.history}/>
+      <MenuItem title="Womens" subtitle="shop for wos" history={props.history}/>
+      <MenuItem title="Sneakers" subtitle="shop for sneak" history={props.history}/>
+      <MenuItem title="Pants" subtitle="shop for pant" history={props.history}/>
     </div>
   </div>
 )
