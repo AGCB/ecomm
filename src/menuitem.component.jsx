@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 const MenuItem = ({title, subtitle, history}) => {
   return (
@@ -12,4 +13,4 @@ const MenuItem = ({title, subtitle, history}) => {
     </div>
   )
 }
-export default MenuItem;
+export default withRouter(MenuItem);
