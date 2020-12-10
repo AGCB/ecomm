@@ -1,6 +1,6 @@
 import defaultSections from '../../config.js';
 import MenuItem from '../MenuItem';
-
+import './directory-menu.scss';
 
 const DirectoryMenu = () => {
   return (
