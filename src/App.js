@@ -2,7 +2,7 @@ import './App.scss';
 import HomePage from './pages/HomePage';
 import { Route, Switch } from 'react-router-dom';
 
-function HatsPage() {
+function HatsPage(props) {
   return (
     <span>hatsPage</span>
   )
@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <h1>Ecomm Site</h1>
       <Switch>
-        <Route exact path="/" component={HomePage}/>
-        <Route path="/hats" component={HatsPage}/>
+        <Route path="/hats/:customId" component={HatsPage}/>
+        <Route path="/" component={HomePage}/>
       </Switch>
     </div>
   );
