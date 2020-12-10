@@ -2,7 +2,7 @@ import DirectoryMenu from '../../components/DirectoryMenu';
 
 const HomePage = () => (
   <div className="homepage">
-    <span>here is the hopepage</span>
+    <span>HomePage</span>
     <DirectoryMenu/>
   </div>
 )
