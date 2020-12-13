@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CollectionPreview from '../../components/CollectionPreview';
 import './shop-page.scss';
 
 class ShopPage extends Component {
@@ -259,11 +260,14 @@ class ShopPage extends Component {
 
     return (
       <div className="shop-page">
-        <span>here is our shop page</span>
+        <span>shop page</span>
         {
-          collections.map(c => {
-            console.log(`here is collection-${c.id}`, c);
-            return <span>{c.title}</span>
+          collections.map(collection => {
+            return (
+              <CollectionPreview
+                key={collection.id}
+                collection={collection} />
+            )
           })
         }
       </div>

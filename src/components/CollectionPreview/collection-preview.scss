@@ -1,0 +1,17 @@
+.collection-preview {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid green;
+  .collection-preview-title {
+    color: white;
+  }
+  .collection-preview-items {
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    .collection-preview-item {
+      padding: 5%;
+    }
+  }
+}
